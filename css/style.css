@@ -1,14 +1,7 @@
-/* ===================================================
-   City Explorer — css/style.css
-   Lab 1 — Tehnologii Web
-   =================================================== */
 
-/* ---------- 1. Font import ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-/* ---------- 2. Design tokens (variabile CSS) ---------- */
 :root {
-  /* Palette */
   --clr-primary:      hsl(220, 90%, 56%);
   --clr-primary-dark: hsl(220, 80%, 44%);
   --clr-accent:       hsl(36, 95%, 55%);
@@ -20,7 +13,6 @@
   --clr-text-muted:   hsl(210, 12%, 60%);
   --clr-white:        #ffffff;
 
-  /* Typography */
   --font-main: 'Outfit', sans-serif;
   --fs-xs:   0.75rem;
   --fs-sm:   0.875rem;
@@ -30,7 +22,6 @@
   --fs-2xl:  2rem;
   --fs-3xl:  2.75rem;
 
-  /* Spacing */
   --sp-1: 0.25rem;
   --sp-2: 0.5rem;
   --sp-3: 0.75rem;
@@ -41,7 +32,6 @@
   --sp-16: 4rem;
   --sp-24: 6rem;
 
-  /* Misc */
   --radius-sm: 6px;
   --radius:    12px;
   --radius-lg: 20px;
@@ -50,7 +40,6 @@
   --transition: 0.25s ease;
 }
 
-/* ---------- 3. Reset & Base ---------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -84,7 +73,6 @@ a {
   text-decoration: none;
 }
 
-/* ---------- 4. Header & Nav ---------- */
 header {
   position: sticky;
   top: 0;
@@ -105,7 +93,6 @@ header {
   gap: var(--sp-4);
 }
 
-/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -119,7 +106,6 @@ header {
   font-size: var(--fs-xl);
 }
 
-/* Nav links */
 nav {
   display: flex;
   gap: var(--sp-6);
@@ -141,7 +127,6 @@ nav a:focus {
   outline: none;
 }
 
-/* ---------- 5. Main layout ---------- */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -151,7 +136,6 @@ main {
   gap: var(--sp-24);
 }
 
-/* ---------- 6. Section headings ---------- */
 section h2 {
   font-size: var(--fs-2xl);
   font-weight: 700;
@@ -165,14 +149,12 @@ section h2 {
   margin-bottom: var(--sp-8);
 }
 
-/* ---------- 7. Destinații — Grid de carduri ---------- */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--sp-6);
 }
 
-/* Card */
 .card {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
@@ -231,7 +213,6 @@ section h2 {
   border-top: 1px solid var(--clr-border);
 }
 
-/* ---------- 8. Planifică — Formular ---------- */
 #planifica {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
@@ -311,7 +292,6 @@ select:focus {
   transform: translateY(0);
 }
 
-/* ---------- 9. Recomandări — Listă sfaturi ---------- */
 .tips-list {
   display: flex;
   flex-direction: column;
@@ -354,7 +334,6 @@ select:focus {
   line-height: 1.6;
 }
 
-/* ---------- 10. Footer ---------- */
 footer {
   background: var(--clr-surface);
   border-top: 1px solid var(--clr-border);
@@ -376,7 +355,6 @@ footer strong {
   font-size: var(--fs-xs);
 }
 
-/* ---------- 11. Responsive (ecrane mici) ---------- */
 @media (max-width: 640px) {
   .header-inner {
     flex-direction: column;

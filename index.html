@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Explorer</title>
+    <meta name="description" content="City Explorer – mini-ghid de călătorie cu destinații turistice, planificator de excursii și recomandări de călătorie." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Header & Nav -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">✈</span>
+          <span class="logo-text">City Explorer</span>
+        </div>
+        <nav>
+          <a href="#destinatii">Destinații</a>
+          <a href="#planifica">Planifică</a>
+          <a href="#recomandari">Recomandări</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Secțiunea Destinații -->
+      <section id="destinatii">
+        <h2>Destinații</h2>
+        <p class="section-subtitle">Descoperă cele mai frumoase orașe din lume</p>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <div class="card-badge">Europa</div>
+            <h3 class="card-city">Lisabona</h3>
+            <p class="card-country">🇵🇹 Portugalia</p>
+            <p class="card-description">Capitala Portugaliei te cucerește cu tramvaiele galbene, azulejos-urile colorate și apusurile spectaculoase de la Miradouro da Graça.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>4–5 zile</strong></p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge">Asia</div>
+            <h3 class="card-city">Kyoto</h3>
+            <p class="card-country">🇯🇵 Japonia</p>
+            <p class="card-description">Fostul oraș imperial al Japoniei, renumit pentru templele budiste, grădinile zen și festivalul Gion Matsuri din iulie.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>5–7 zile</strong></p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge">America de Sud</div>
+            <h3 class="card-city">Buenos Aires</h3>
+            <p class="card-country">🇦🇷 Argentina</p>
+            <p class="card-description">Capitala Argentinei este locul de naștere al tangoului, cu arhitectură europeană, steakhouse-uri renumite și o viață de noapte vibrantă.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>5–6 zile</strong></p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge">Africa</div>
+            <h3 class="card-city">Marrakech</h3>
+            <p class="card-country">🇲🇦 Maroc</p>
+            <p class="card-description">Orașul roșu al Marocului fascinează prin souq-urile labirintice, palatele ornate și piața Jemaa el-Fna, plină de viață zi și noapte.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>3–4 zile</strong></p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge">Europa</div>
+            <h3 class="card-city">Praga</h3>
+            <p class="card-country">🇨🇿 Cehia</p>
+            <p class="card-description">Orașul de aur surprinde cu Podul Carol medieval, Castelul Praga și centrul vechi perfect conservat, clasificat UNESCO.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>3–4 zile</strong></p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge">Asia</div>
+            <h3 class="card-city">Bangkok</h3>
+            <p class="card-country">🇹🇭 Thailanda</p>
+            <p class="card-description">Un oraș al contrastelor: temple aurite lângă zgârie-nori, street food delicios și canale care l-au consacrat drept Veneția Asiei.</p>
+            <p class="card-duration">⏱ Durată recomandată: <strong>4–5 zile</strong></p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Secțiunea Planifică -->
+      <section id="planifica">
+        <h2>Planifică excursia ta</h2>
+        <p class="section-subtitle">Completează formularul și începe aventura</p>
+
+        <div class="form-wrapper">
+          <form class="plan-form" action="#" method="get">
+
+            <div class="form-group">
+              <label for="name">Nume</label>
+              <input id="name" name="name" type="text" placeholder="ex. Alexandru Ionescu" required />
+            </div>
+
+            <div class="form-group">
+              <label for="destination">Destinație</label>
+              <select id="destination" name="destination" required>
+                <option value="">Alege...</option>
+                <option value="Lisabona">Lisabona</option>
+                <option value="Kyoto">Kyoto</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Marrakech">Marrakech</option>
+                <option value="Praga">Praga</option>
+                <option value="Bangkok">Bangkok</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="days">Număr de zile</label>
+              <input id="days" name="days" type="number" min="1" max="30" placeholder="ex. 5" required />
+            </div>
+
+            <button type="submit" class="btn-submit">Planifică acum ✈</button>
+
+          </form>
+        </div>
+      </section>
+
+      <!-- Secțiunea Recomandări -->
+      <section id="recomandari">
+        <h2>Recomandări de călătorie</h2>
+        <p class="section-subtitle">Sfaturi esențiale pentru o experiență de neuitat</p>
+
+        <ul class="tips-list">
+          <li class="tip-item">
+            <span class="tip-icon">🗺</span>
+            <div>
+              <strong>Planifică din timp</strong>
+              <p>Rezervă biletele de avion și cazarea cu cel puțin 2–3 luni înainte pentru prețuri mai bune și disponibilitate mai mare.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <span class="tip-icon">💳</span>
+            <div>
+              <strong>Folosește carduri fără comisioane internaționale</strong>
+              <p>Cardurile cu 0% comision la tranzacții externe (ex. Revolut, Wise) te pot scuti de sute de lei la fiecare trip.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <span class="tip-icon">🌍</span>
+            <div>
+              <strong>Învață câteva cuvinte în limba locală</strong>
+              <p>Un simplu mulțumesc sau bună ziua în limba destinației deschide inimi și creează conexiuni autentice cu localnicii.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <span class="tip-icon">🎒</span>
+            <div>
+              <strong>Împachetează light</strong>
+              <p>Regula de aur: dacă nu poți ridica bagajul cu o singură mână, ai prea multe lucruri. Hainele se pot spăla oriunde în lume.</p>
+            </div>
+          </li>
+          <li class="tip-item">
+            <span class="tip-icon">📸</span>
+            <div>
+              <strong>Explorează în afara atracțiilor principale</strong>
+              <p>Cele mai autentice experiențe se găsesc adesea la doi pași de locurile turistice aglomerate – plimbă-te prin cartierele locale.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>City Explorer &copy; 2026 &mdash; Creat de <strong>Rares Gabriel</strong></p>
+      <p class="footer-sub">Tehnologii Web &ndash; Lucrarea de laborator nr. 1</p>
+    </footer>
+
+  </body>
+</html>
